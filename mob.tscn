@@ -48,15 +48,17 @@ animations = [{
 radius = 33.0
 height = 84.0
 
-[node name="Mob" type="RigidBody2D"]
+[node name="Mob" type="RigidBody2D" groups=["mobs"]]
+scale = Vector2(0.75, 0.75)
 collision_mask = 0
+gravity_scale = 0.0
 script = ExtResource("1_1qmh0")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_pcqmr")
-animation = &"swim"
+animation = &"fly"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
@@ -64,4 +66,4 @@ shape = SubResource("CapsuleShape2D_b3mxk")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 
-[node name="Node" type="Node" parent="."]
+[node name="Node" type="Node" parent="." groups=["mobs"]]
