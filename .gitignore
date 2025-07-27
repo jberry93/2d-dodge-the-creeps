@@ -17,6 +17,9 @@
 .mono/              # Godot‑managed MSBuild cache
 bin/                # Assemblies produced by MSBuild
 obj/                # MSBuild object files
+*.exe
+*.pck
+*.cfg
 
 # Rider / VS / VS Code extras
 .vscode/
