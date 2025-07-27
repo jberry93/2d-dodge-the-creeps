@@ -1,0 +1,64 @@
+###############################################################################
+# Godot – core engine cache & local data                                     #
+###############################################################################
+# Import‑cache: can always be rebuilt from source assets
+.import/
+
+# Per‑user editor data, window layouts, recent‑files lists, crash logs, etc.
+.godot/
+
+# Local export / build output (set in “Export” dialog)
+.export/
+
+###############################################################################
+# Godot Mono (C#) – build artefacts                                           #
+###############################################################################
+# Generated project & solution binaries
+.mono/              # Godot‑managed MSBuild cache
+bin/                # Assemblies produced by MSBuild
+obj/                # MSBuild object files
+
+# Rider / VS / VS Code extras
+.vscode/
+.idea/
+*.csproj.user
+*.sln.DotSettings
+
+###############################################################################
+# Temporary files & OS noise                                                 #
+###############################################################################
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+# Linux
+*~
+
+# Common editors
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
+
+###############################################################################
+# Godot export templates (if you keep them in the project folder)            #
+###############################################################################
+# Uncomment if templates live inside the repo and you don’t want to track them
+# templates/
+
+###############################################################################
+# Optional: Godot translation binaries – generated from .po                  #
+###############################################################################
+*.translation
+
+###############################################################################
+# Log files                                                                  #
+###############################################################################
+*.log
+
+###############################################################################
+# Projet assets that should not be versioned                                 #
+###############################################################################
+art/
+fonts/
